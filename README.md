@@ -3,26 +3,31 @@
 A web application that allows multiple users to read a book at the same time and make comments on text.
 
 
-
 Main functionalities:
 
 -Create a user
 
--A user can update their profile
-
 -Sign in as a user \[username and password]
-
--Password recovery via email
 
 -Create a bookclub \[upload an epub] - the user who created the bookclub is the admin
 
 -Users can join a bookclub 
 
--Admin is allowed to remove users
+-User can leave a bookclub
 
 -A user can highlight a section of text and add a comment
 
--A user can set a nickname for the specific bookclub \[as in the user will show up with that nickname rather than their username]
+-A user can respond to a comment
 
 
+Nonfunctional requirements:
+
+-Data is saved in a database
+
+
+Iterations:
+
+1. Implement create account and log in
+2. Implement create a bookclub, add an epub and view the epub
+3. Implement adding a comment
 
