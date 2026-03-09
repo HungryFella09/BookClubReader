@@ -13,9 +13,9 @@ Main functionalities:
 
 -Users can join a bookclub 
 
--User can leave a bookclub
+-A user can leave a bookclub they are part of
 
--A user can highlight a section of text and add a comment
+-A user can highlight a section of text from a book and add a comment
 
 -A user can respond to a comment
 
