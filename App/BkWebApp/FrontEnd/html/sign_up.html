@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Bk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+
+    <div class="center">
+        <div id="signUpPage">
+         <p class="title">Sign Up</p>
+        <label for="input_username">Username:</label><br>
+        <input type="text" id="input_username" name="input_username"><br>
+        <label for="input_email">Email:</label><br>
+        <input type="text" id="input_email" name="input_email"><br>
+        <label for="input_password">Password:</label><br>
+        <input type="password" id="input_password" name="input_password"><br>
+        <label for="input_retyped_password">Retype your password:</label><br>
+        <input type="password" id="input_retyped_password" name="retyped_password"><br>
+        <p id="errorLabel" style="text-wrap: wrap; color: white;"></p>
+        <div id="btnBox">
+            <button id="signUpBtn" onclick="return sign_up()">Sign Up</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascript/sign_up.js"></script>
+
+</body>
+</html>

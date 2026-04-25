@@ -1,0 +1,95 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+}
+
+
+#signUpPage {
+    /* position: absolute; */
+    max-width: 20%;
+    height: auto;
+    width: auto;
+    background-color: var(--brownish);
+    align-items: center; 
+    justify-content: center;
+    padding: 5% 5% 5% 5%;
+    border-radius: 10%;
+
+}
+
+label{
+    color: white;
+}
+
+/* #signUpPage * {
+    color: white;
+} */
+
+body{
+    background-color: var(--whiteish);
+}
+
+.title{
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 10%;
+    color: white;
+}
+
+
+input{
+    color: #000000;
+    min-width: 300px;
+    width: 100%;
+    padding: 4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-color: var(--whiteish);;
+    background-color: var(--whiteish);
+    outline: none;
+    border-radius: 10px;
+    
+}
+
+
+input:focus {
+  border: 3px solid var(--whiteish);
+}
+
+
+#btnBox{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10%;
+}
+
+#signUpBtn{
+     border: none;
+    /* padding: 15px 32px; */
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+    background-color: black;
+    color: var(--whiteish);
+}
+
+#signUpBtn:hover{
+    box-shadow:0 4px 0 #000000;
+}
+
+#signUpBtn:active {
+  transform: translateY(4px);
+}

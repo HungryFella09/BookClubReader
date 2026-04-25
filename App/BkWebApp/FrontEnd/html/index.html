@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Bk</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div class="center">
+        <div id="logInPage">
+            <p class="title">Log In</p>
+            <label for="input_username">Username:</label><br>
+            <input type="text" id="input_username" name="input_username"><br>
+            <label for="input_password">Password:</label><br>
+            <input type="password" id="input_password" name="input_password"><br>
+            <p id="errorLabel" style="text-wrap: wrap; color: white;"></p>
+            <div id="btnBox">
+                <button class="btn" id="logInBtn" onclick="return log_in()">Log In</button>
+               <a href="sign_up.html"> 
+                <button class="btn" id="signUpBtn">Sign Up</button>
+                </a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascript/log_in.js"></script>
+
+</body>
+</html>

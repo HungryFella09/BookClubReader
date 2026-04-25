@@ -9,9 +9,9 @@ Main functionalities:
 
 -Sign in as a user \[username and password]
 
--Create a bookclub \[upload an epub] - the user who created the bookclub is the admin
+-Create a BuddyRead \[upload an epub] - the user who created the BuddyRead is the admin
 
--Users can join a bookclub 
+-Users can join a BuddyRead 
 
 -A user can highlight a section of text from a book and add a comment
 
@@ -27,6 +27,6 @@ Nonfunctional requirements:
 Iterations:
 
 1. Implement create account and log in
-2. Implement create a bookclub, add an epub and view the epub
+2. Implement create a BuddyRead, add an epub and view the epub
 3. Implement adding a comment
 

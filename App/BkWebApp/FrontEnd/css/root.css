@@ -1,0 +1,11 @@
+*{
+    font-family: "Roboto Serif", Helvetica, Arial, sans-serif;
+}
+
+:root{
+    --brownish:rgb(102, 92, 83);
+    --whiteish: rgb(243, 238, 229);
+    --phone: 400px;
+    --tablet: 1100px;
+}
+
