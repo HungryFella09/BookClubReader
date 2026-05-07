@@ -9,3 +9,8 @@
     --tablet: 1100px;
 }
 
+body{
+    background-color: var(--whiteish);
+    margin: 0;
+    padding: 0;
+}

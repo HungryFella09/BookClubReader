@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Bk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/add_buddy_read.css">
+</head>
+<body>
+    <div id="main_page">
+        <div id="join_w_code">
+            <div id="join_header">
+                <h1>Join using a code:</h1>
+                <button id="joinWCodeButton" onclick="return joinWCode()">Join</button>
+            </div>
+            
+            <input type="text" id="input_key" name="input_key"><br>
+            <p id="wrong_id" style="color: red;"></p>
+            <p id="succesful_msg"></p>
+        </div>
+        
+        <div id="create_book">
+            <h1>Or create your own BuddyReads:</h1>
+            <div>
+                <p>Upload a .epub file:</p>
+                <input type="file" id="epub_file"><br>   
+            </div>
+            <div>
+                <p>Input the book's title</p>
+                <p>[this will also be the title that will show up on the main menu]</p>
+                <input type="text" id="input_title" name="input_title"><br>
+            </div>
+            <button id="sendBtn" onclick="return send()">Create BuddyRead</button>
+            <p id="generated_code"></p>
+            <p id="error_message" style="color: red;"></p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascript/add_epub.js"></script>
+
+</body>
+</html>

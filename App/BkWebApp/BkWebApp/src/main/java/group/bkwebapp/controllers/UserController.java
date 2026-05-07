@@ -1,6 +1,7 @@
 package group.bkwebapp.controllers;
 
 import group.bkwebapp.domain.User;
+import group.bkwebapp.domain.dtos.UserDto;
 import group.bkwebapp.domain.requestsNresponses.BookSaveRequest;
 import group.bkwebapp.domain.requestsNresponses.LogInRequest;
 import group.bkwebapp.service.BookService;
@@ -19,18 +20,9 @@ public class UserController {
         this.bookService = bookService;
     }
 
-    @GetMapping
-    public User getUser() {
-        return bookService.getUser();
-    }
-
-    @PostMapping
-    public void registerNewUser(@RequestBody User user){
-        bookService.addNewUser(user);
-    }
 
     @PostMapping("/log_in")
-    public User logInUser(@RequestBody LogInRequest loginRequest){
+    public UserDto logInUser(@RequestBody LogInRequest loginRequest){
         return bookService.logIn(loginRequest.getUsername(),  loginRequest.getPassword());
     }
 

@@ -2,6 +2,9 @@ package group.bkwebapp.domain;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -12,6 +15,9 @@ public class User {
     private String username;
     private String password;
     private String email;
+
+    @ManyToMany(mappedBy = "members")
+    private Set<BuddyRead> buddyReads = new HashSet<>();
 
     public User(Long id, String username, String password, String email) {
         this.id = id;
@@ -58,6 +64,18 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Set<BuddyRead> getBuddyReads() {
+        return buddyReads;
+    }
+
+    public void setBuddyReads(Set<BuddyRead> buddyReads) {
+        this.buddyReads = buddyReads;
+    }
+
+    public void addBuddyRead(BuddyRead buddyRead){
+        this.buddyReads.add(buddyRead);
     }
 
     @Override

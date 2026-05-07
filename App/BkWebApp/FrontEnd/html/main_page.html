@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/main_page.css">
 </head>
 <body>
 
+    <div id="topBar">
+        <button class="btn" id="accountIcon">Acc</button>
+        <button class="btn" onclick="return on_add_buddyRead()">+</button>
+    </div>
     
-    <input type="file" id="epub_file"><br>
-       
-    <button id="signUpBtn" onclick="return send()">Upload</button>
-
+    <p id="buddy_reads_title">Buddy reads you are part of:</p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../javascript/send_epub.js"></script>
+    <script src="../javascript/main_page.js"></script>
     
 
 </body>

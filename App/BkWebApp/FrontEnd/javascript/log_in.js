@@ -5,6 +5,15 @@ function log_in(){
     var myusername = document.getElementById("input_username").value;
     var mypassword = document.getElementById("input_password").value;
 
+    if(myusername == ""){
+        document.getElementById("input_username").style.borderColor = "red";
+        return;
+    }
+    if(mypassword == ""){
+        document.getElementById("input_password").style.borderColor = "red";
+        return;
+    }
+
     fetch("http://localhost:8080/api/user_controller/log_in", {
         method: "POST",
         body: JSON.stringify({

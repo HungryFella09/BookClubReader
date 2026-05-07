@@ -7,6 +7,24 @@ function sign_up(){
     var myretypedpassword = document.getElementById("input_retyped_password").value;
     var myemail = document.getElementById("input_email").value;
 
+
+    if(myusername == ""){
+        document.getElementById("input_username").style.borderColor = "red";
+        return;
+    }
+    if(mypassword == ""){
+        document.getElementById("input_password").style.borderColor = "red";
+        return;
+    }
+    if(myemail == ""){
+        document.getElementById("input_email").style.borderColor = "red";
+        return;
+    }
+    if(myretypedpassword == ""){
+        document.getElementById("input_retyped_password").style.borderColor = "red";
+        return;
+    }
+
     if(mypassword != myretypedpassword){
         document.getElementById("input_password").style.borderColor= "red";
         document.getElementById("errorLabel").innerHTML="Retype your password";
