@@ -7,7 +7,6 @@ public class BuddyReadDto {
     private String key;
     private String adminName;
 
-
     public BuddyReadDto() {}
 
     public BuddyReadDto(Long id, String bookName, String key, String adminName) {

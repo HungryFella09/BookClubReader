@@ -29,7 +29,7 @@ function log_in(){
         return response.json().then(response => {throw new Error(response.message)})
     })
     .then((user) => {
-                console.log(user);
+                //console.log(user);
                 localStorage.setItem('mainUser', JSON.stringify(user));
                 window.location.href = "main_page.html";
             })

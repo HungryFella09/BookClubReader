@@ -12,4 +12,5 @@ import java.util.Optional;
 public interface BookRepository extends JpaRepository<BuddyRead, Long> {
 
     Optional<BuddyRead> findBuddyReadByKey(String key);
+
 }

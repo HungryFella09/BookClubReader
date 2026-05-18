@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/book_view.css">
+    
+</head>
+<body>
+
+    <div id="topBar">
+        <button class="btn" onclick="back()">back</button>
+        <select id="select_chapter"></select>
+    </div>
+
+    <div id="book_and_comments">
+        <div id="book_background">
+        </div>    
+        <div id="comments">
+            <div id="comments_container">
+            </div>
+            <input type="text" id="input_comment" name="input_comment" placeholder="type a comment..."><br>
+            
+            <input type="text" id="paragraph_id" name="paragraph_id" style="display: none;">
+            <button class="btn" style="display: none;" id="update_comment">Update</button><br>
+            <button class="btn" style="display: none;" id="delete_comment">Delete</button><br>
+            <button class="btn" id="postCommentBtn" onclick="return on_add_comment()">Post</button>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascript/book_view.js"></script>
+
+</body>
+</html>
